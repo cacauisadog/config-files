@@ -1,0 +1,5 @@
+AceJump
+HighlightBracketPair
+Key Promoter X
+Rainbow Brackets
+SonarLint
