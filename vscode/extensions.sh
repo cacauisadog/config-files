@@ -1,0 +1,15 @@
+code --install-extension akamud.vscode-theme-onedark
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension christian-kohler.path-intellisense
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension cssho.vscode-svgviewer
+code --install-extension dariofuzinato.vue-peek
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dkundel.vscode-new-file
+code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension octref.vetur
+code --install-extension robinbentley.sass-indented
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension Zignd.html-css-class-completion
