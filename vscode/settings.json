@@ -3,10 +3,6 @@
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     "workbench.startupEditor": "newUntitledFile",
-
-    "[ruby]": {
-        "editor.wordSeparators": "`~@#$%^&*()-=+[{]}\\|;:'\",.<>/"
-    },
     "[python]": {
         "editor.rulers": [
             120
@@ -14,9 +10,6 @@
     },
     "[html]": {
         "editor.detectIndentation": false
-    },
-    "[elixir]": {
-        "editor.tabSize": 2
     },
     "vetur.format.defaultFormatter.js": "vscode-typescript",
     "vetur.format.defaultFormatter.html": "js-beautify-html",
@@ -61,6 +54,37 @@
         "**/.nuxt": true,
         "**/node_modules": true
     },
-    "newFile.defaultFileExtension": ".vue",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    //following will be in italic (=FlottFlott)
+                    "comment",
+                    "entity.name.type.class", //class names
+                    "keyword", //import, export, return…
+                    "constant", //String, Number, Boolean…, this, super
+                    "storage.modifier", //static keyword
+                    "storage.type.class.js", //class keyword
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    //following will be excluded from italics (VSCode has some defaults for italics)
+                    "invalid",
+                    "keyword.operator",
+                    "constant.numeric.css",
+                    "keyword.other.unit.px.css",
+                    "constant.numeric.decimal.js",
+                    "constant.numeric.json"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    }
 }
