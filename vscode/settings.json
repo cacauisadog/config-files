@@ -2,59 +2,20 @@
     "window.titleBarStyle": "custom",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Atom One Dark",
     "workbench.startupEditor": "newUntitledFile",
-    "[python]": {
-        "editor.rulers": [
-            120
-        ]
-    },
-    "[html]": {
-        "editor.detectIndentation": false
-    },
-    "vetur.format.defaultFormatter.js": "vscode-typescript",
-    "vetur.format.defaultFormatter.html": "js-beautify-html",
-    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        }
-    ],
-    "editor.fontFamily": "'Fira Code', Monaco, 'Courier New', monospace",
-    "editor.acceptSuggestionOnEnter": "off",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "window.zoomLevel": 0,
+    "breadcrumbs.enabled": true,
+    "terminal.integrated.fontSize": 13,
+    "editor.fontFamily": "'Fira Code Retina', Monaco, 'Courier New', monospace",
+    "editor.acceptSuggestionOnEnter": "off",
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
-    "emmet.showSuggestionsAsSnippets": false,
-    "emmet.includeLanguages": {
-        "erb": "html",
-        "HTML (Eex)": "html"
-    },
-    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": true,
     "editor.wordWrap": "on",
-    "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.fontLigatures": true,
-    "workbench.colorTheme": "Atom One Dark",
-    "terminal.integrated.fontSize": 13,
-    "explorer.confirmDelete": false,
     "editor.tabSize": 2,
-    "git.autofetch": true,
-    "breadcrumbs.enabled": true,
-    "files.exclude": {
-        "**/.nuxt": true,
-        "**/node_modules": true
-    },
-    "files.trimTrailingWhitespace": true,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -86,5 +47,36 @@
                 }
             }
         ]
-    }
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "files.exclude": {
+        "**/.nuxt": true,
+        "**/node_modules": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "[python]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+    "[html]": {
+        "editor.detectIndentation": false
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "vetur.format.defaultFormatter.html": "js-beautify-html",
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "eslint.validate": [
+        "vue",
+        "javascript",
+        "javascriptreact"
+    ],
+    "emmet.showSuggestionsAsSnippets": false,
+    "git.autofetch": true,
 }
